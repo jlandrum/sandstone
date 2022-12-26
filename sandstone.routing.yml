@@ -1,0 +1,25 @@
+sandstone:
+  path: /admin/sandstone
+  defaults:
+    _controller: Drupal\sandstone\Controller\SandstoneController::admin
+  requirements:
+    _permission: 'access content'
+
+sandstone.admin:
+  path: '/admin/config/sandstone'
+  defaults: 
+    _form: Drupal\sandstone\Form\AdminForm
+    _title: 'Sandstone Settings'
+  requirements:
+    _permission: 'administer sandstone configuration'
+
+sandstone.edit_route:
+  path: '/admin/config/sandstone/{controller}'
+  defaults: 
+    _form: Drupal\sandstone\Form\EditApiRouteForm
+    _title: 'Edit API Route'
+  requirements:
+    _permission: 'administer sandstone configuration'
+
+route_callbacks:
+  - '\Drupal\sandstone\Routing\ApiRoutes::routes'

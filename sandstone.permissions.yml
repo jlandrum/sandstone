@@ -1,0 +1,8 @@
+administer sandstone configuration:
+  title: 'Administer Sandstone Configuration'
+access sandstone apis:
+  title: 'Use Sandstone API'
+  description: 'For each endpoint, permissions should be validated in the controller implementation.'
+update own profile:
+  title: 'Update Own Profile'
+  description: 'An API-specific permission allowing a user to update their own profile and associated entities.'

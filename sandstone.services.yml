@@ -1,0 +1,5 @@
+services:
+  sandstone.route_subscriber:
+    class: Drupal\sandstone\Routing\ApiRoutes
+    tags: 
+      - { name: event_subscriber }

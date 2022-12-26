@@ -1,0 +1,7 @@
+<?php
+
+use \Drupal\sandstone\ApiController\AuthProfileController;
+
+function sandstone_add_controller(&$controllers) {
+  $controllers['user.controller'] = AuthProfileController::class;
+}

@@ -1,0 +1,7 @@
+name: Sandstone
+description: A modern API module intended for headless applications
+package: Sandstone
+
+type: module
+version: 0.1
+core_version_requirement: ^9 || ^10

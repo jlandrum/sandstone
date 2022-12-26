@@ -1,0 +1,6 @@
+sandstone.admin:
+  title: 'Sandstone API'
+  description: 'Configure Sandstone to expose API routes, configure permissions, etc.'
+  parent: system.admin_config_services
+  route_name: sandstone.admin
+  weight: 100
